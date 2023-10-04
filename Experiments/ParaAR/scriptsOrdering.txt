@@ -1,0 +1,5 @@
+Run:
+kernelParameterSelection (HEAVY) || ObservedDataGeneration
+ProbabilityEstimation (HEAVY)
+EvaluationCalculations
+Visualization - in notebook
