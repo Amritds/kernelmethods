@@ -8,7 +8,15 @@ The project dissertation report, **Dissertation.pdf** can be found in the main p
 **Presentation.pdf** very briefly summarises the main results and conclusions.
 
 ## Dependencies ##
-The packages required for experiments are those included in the SciPy framework.
+Python Version: **Python 3.6.3**
+
+Package dependencies:
+
+```numpy==1.23.2```
+```scikit-learn==1.1.2```
+```matplotlib==3.5.3```
+
+Other dependencies can be installed by running ```conda install --name <env-name> --file spec-file.txt```
 
 ## Code ##
 The ClassifierEvaluation directory code tests the KLR classifier implemented.
