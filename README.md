@@ -1,10 +1,11 @@
 # README #
 
+## Description 
 This project investigates the application of Kernel Logistic Regression for the LFIRE technique, completed for my Undergraduate 4th year project dissertation, under the supervision of Dr. Michael U. Gutmann at the University of Edinburgh.
 
-The project dissertation report, 'Dissertation.pdf' can be found in the main project directory, detailing work undertaken and results of the experiments conducted.
+The project dissertation report, **Dissertation.pdf** can be found in the main project directory, detailing work undertaken and results of the experiments conducted.
 
-'Presentation.pdf' very briefly summarises the main results and conclusions.
+**Presentation.pdf** very briefly summarises the main results and conclusions.
 
 ## Dependencies ##
 The packages required for experiments are those included in the SciPy framework.
