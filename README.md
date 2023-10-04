@@ -37,7 +37,7 @@ The common utility code for pdf-estimation experiments is seperated into the ```
 
 ```Experiments``` contains jupyter-notebooks for experiments reported in **Dissertation.pdf**
 
-**Each experiment in Experiments typicaly has seperate scripts to:**
+**Each experiment in Experiments typicaly contains seperate scripts to:**
 
 * Generate observed data points
 * Select hyper-parameters and regularization bands
