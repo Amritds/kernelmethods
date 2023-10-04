@@ -1,7 +1,7 @@
 # README #
 
 ## Description 
-This project investigates the application of Kernel Logistic Regression for the LFIRE technique, completed for my Undergraduate 4th year project dissertation, under the supervision of Dr. Michael U. Gutmann at the University of Edinburgh.
+This project implements the [Kernel Logistic Regression (KLR) technique](https://hastie.su.domains/Papers/jcgs02_c.pdf) and investigates the application of KLR to the [LFIRE likelihood-free posterior-pdf estimation method](https://arxiv.org/pdf/1611.10242.pdf). This work was completed as part of my final-year undergraduate dissertation, under the guidance of Dr. Michael U. Gutmann at the University of Edinburgh.
 
 The project dissertation report, **Dissertation.pdf** can be found in the main project directory, detailing work undertaken and results of the experiments conducted.
 
@@ -19,42 +19,28 @@ Package dependencies:
 Other dependencies can be installed by running ```conda install --name <env-name> --file spec-file.txt```
 
 ## Code ##
-The ClassifierEvaluation directory code tests the KLR classifier implemented.
+```ClassifierEvaluation/kernelClassifier.py``` contians code that implements the KLR classifier.
 
-The ToyExamples directory contain very early experiments for posterior evaluation.
+```ClassifierEvaluation/classifierEvaluation_*``` notebooks tests the function of the KLR classifier against varied classification-problems. 
 
-Experiments1 and Experiments2 directories contain experiments that informally investigated the research questions of the Dissertation.
+```ClassifierEvaluation/Gaussian_*_pdf_estimation.ipynb``` notebooks test the KLR classifier for toy-problem single-run gaussian pdf estimation using the LFIRE technique.
 
-Experiments for the presented results, using the Gaussian and ARCH(1) data generating models are largely contained within the Experiments3 directory.
+The common utility code for pdf-estimation experiments is seperated into the ```Utilities``` package (in the main directory).
 
-The core code for a single experiment is common across most experiments and is seperated into the Utilities package (included in each experiment directory).
+**The Utilities package contains code for:**
 
-### The Utilities package contains code for:
+* The kernel classifier
+*  Kernel Functions
+*  Data Generating models
+*  Selection of hyper-parameters and regularization bands
+*  LFIRE posterior estimation.
 
-The kernel classifier, 
+```Experiments``` contains jupyter-notebooks for experiments reported in **Dissertation.pdf**
 
-Kernel Functions,
+**Each experiment in Experiments typicaly has seperate scripts to:**
 
-Data Generating models,
-
-Selection of hyper-parameters and regularization bands,
-
-LFIRE posterior estimation.
-
-### Each experiment in Experiments3 typicaly has seperate scripts to:
-
-Generate observed data points,
-
-Select hyper-parameters and regularization bands,
-
-Compute the posterior at multiple points (parallelized by having multiple scripts for different ranges of points),
-
-Coallate results and compute Evaluation metrics for the estimated posterior.
-
-Visualization of experiments was conduted in IPython notebooks.
-
-The project reposotory also contains code for:
-
-Experiments with the Fourier kernel from https://github.com/gmum/pykernels, which were not completed as part of the Dissertation. 
-
-Experiments with the SSK kernel from the shogun machine learning library, using a Dynamic bistable HMM, which were not completed as part of the Dissertation. 
+* Generate observed data points
+* Select hyper-parameters and regularization bands
+* Compute the posterior at multiple points (parallelized by having multiple scripts for different ranges of points)
+* Coallate results and compute Evaluation metrics for the estimated posterior
+* Visualization of experiments was conduted in IPython notebooks
