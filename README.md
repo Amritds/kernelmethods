@@ -7,6 +7,8 @@ The project dissertation report, **Dissertation.pdf** can be found in the main p
 
 **Presentation.pdf** very briefly summarises the main results and conclusions.
 
+<img src="combined posteriors.png">
+
 ## Dependencies ##
 Python Version: **Python 3.6.3**
 
