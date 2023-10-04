@@ -1,4 +1,4 @@
-# README #
+# Kernel Methods for Likelihood-Free Inference
 
 ## Description 
 This project implements the [Kernel Logistic Regression (KLR) technique](https://hastie.su.domains/Papers/jcgs02_c.pdf) and investigates the application of KLR to the [LFIRE likelihood-free posterior-pdf estimation method](https://arxiv.org/pdf/1611.10242.pdf). This work was completed as part of my final-year undergraduate dissertation, under the guidance of Dr. Michael U. Gutmann at the University of Edinburgh.
